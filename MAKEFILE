@@ -1,0 +1,9 @@
+darray.exe: darray.obj test_darray.obj
+	g++ darray.obj test_darray.obj -o darray.exe
+	
+darray.obj: darray.cpp
+	g++ -g -c -DNDEBUG -O3 darray.cpp -o darray.obj 
+	# -03 ottimizza il codice; -D_a definisce _a; -g 
+
+test_darray.obj: test_darray.cpp
+	g++ -g -c -DNDEBUG -O3 test_darray.cpp -o test_darray.obj
