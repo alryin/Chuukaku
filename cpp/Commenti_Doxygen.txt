@@ -1,0 +1,12 @@
+Ciao, per commentare con Doxygen utilizzare:
+
+  /** apro e chiudo commento (descrizione metodo, funzione e altro) **/
+  
+  //<     -->Commento le Variabili membro
+  
+  @param nome_var descrizione_var --> Descrivo un parametro che la funzione accetta in input
+  @return descrizione_valore_di_ritorno_del_metodo -->Descrivo il valore ritornato da una funzione
+  @throw nome_eccezione Descrizione_eccezione -->Descrivo l'eccezione che lancia la funzione
+  
+--Tutti questi commenti sono necessari per la valutazione positiva del progetto!!
+--Estremamente consigliato metterli nel file .h (poichè è solo un'intrefaccia)
