@@ -1,24 +1,43 @@
 #include <iostream>
 #include "lcs.h"
 
+using namespace std;
+
 int main(int argc, char* argv[]){
-	if (argc!=3){
-		std::cout << "No parameters" << std::endl;
-		return 0;
-	}
-	
-	int xl = 0; 
-	int yl = 0;
-	while(*argv[1] != '\0') {
-		xl++; 
-		*argv[1]++;
-	}
-	while(*argv[2] != '\0') {
-		yl++; 
-		*argv[2]++; 
-	}
-		
-	std::cout << "the ric answer is: " << lcs_len_ric(argv[1], argv[2], xl, yl) << std::endl;
-	std::cout << "the iter answer is: " << lcs_len(argv[1], argv[2], xl, yl) << std::endl;
-	return 0;
+    
+    int a = 0; 
+    int c = 0;
+    
+    cout << "Enter the length of string x" << endl;
+    cin >> a;
+    const int n = a;
+    char x[n];
+   
+    cout << "Enter the string x" << endl;
+    for(int i=0; i<n; i++){ cin >> x[i]; }
+    
+    cout << "Enter the length of string y" << endl;
+    cin >> c;
+    const int m = c;
+    char y[m];    
+    
+    cout << "Enter the string y" << endl;
+    for(int i=0; i<m; i++){ cin >> y[i]; }
+    
+    int** b;
+    b = new int*[n+1];
+    
+    for(int i = 0; i < n+1; i++){
+        b[i] = new int[m+1];
+    }
+    
+    cout << "the answer is: " << lcs_len(x, y, n, m, b) << endl;
+    cout << "a Longest Common Substring is: " ;
+    print_lcs(b, x, n - 1, m - 1); cout << endl;
+    
+    for(int i = 0; i<n; i++){
+        delete(b[i]);
+    } delete(b);
+    
+    return 0;
 }
