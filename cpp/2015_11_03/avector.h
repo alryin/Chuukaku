@@ -1,5 +1,6 @@
-//questo codice non è completo!! lo si termina venerdi!! XD
-
+//*********************************************************************//
+//* NB ::::questo codice non è completo!! lo si termina venerdi!! XD  *//
+//*********************************************************************//
 #ifndef AVECTOR_H
 #define AVECTOR_H
 
