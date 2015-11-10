@@ -194,13 +194,13 @@ class avector{
 		~const_iterator() {}
 
 		// Ritorna il dato riferito dall'iteratore (dereferenziamento)
-		reference operator*() const {
-			return n -> data();
+		const reference operator*() const {
+			return n -> data;
 		}
 
 		// Ritorna il puntatore al dato riferito dall'iteratore
-		pointer operator->() const {
-			return &(n -> data());
+		const pointer operator->() const {
+			return &(n -> data;
 		}
 		
 		// Operatore di iterazione post-incremento
