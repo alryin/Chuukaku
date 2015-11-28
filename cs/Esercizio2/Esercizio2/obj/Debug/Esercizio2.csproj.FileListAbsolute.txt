@@ -1,0 +1,6 @@
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio2\Esercizio2\bin\Debug\Esercizio2.exe.config
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio2\Esercizio2\bin\Debug\Esercizio2.exe
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio2\Esercizio2\bin\Debug\Esercizio2.pdb
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio2\Esercizio2\obj\Debug\Esercizio2.csprojResolveAssemblyReference.cache
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio2\Esercizio2\obj\Debug\Esercizio2.exe
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio2\Esercizio2\obj\Debug\Esercizio2.pdb

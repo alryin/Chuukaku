@@ -1,0 +1,9 @@
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\bin\Debug\Esercizio3.exe.config
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\bin\Debug\Esercizio3.exe
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\bin\Debug\Esercizio3.pdb
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\obj\Debug\Esercizio3.csprojResolveAssemblyReference.cache
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\obj\Debug\Esercizio3.Form1.resources
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\obj\Debug\Esercizio3.Properties.Resources.resources
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\obj\Debug\Esercizio3.csproj.GenerateResource.Cache
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\obj\Debug\Esercizio3.exe
+C:\Users\uni\Documents\Visual Studio 2015\Projects\Esercizio3\Esercizio3\obj\Debug\Esercizio3.pdb
