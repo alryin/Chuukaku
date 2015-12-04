@@ -16,7 +16,6 @@ namespace ConsoleApplication1
         int matricola;
         livello level;
 
-  
         public Program(string nome, string cognome, int matricola, livello level)
         {
             this.nome = nome;
@@ -40,18 +39,11 @@ namespace ConsoleApplication1
             return generali;
         }
 
-
-
-
         static void Main(string[] args)
         {
 
             Program p1 = new Program("E", "Mess", 0004, livello.veryLow);
             Console.WriteLine(p1.ToString());
-
-            
-
-
         }
     }
 }
