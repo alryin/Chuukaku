@@ -1,34 +1,23 @@
 /*
-version 1.0
+version 2.0
 
 Written by Ryick 
 
-(add your name and modify the version number if you modify the file)
+(add your name and modify the version number if you update the file)
 */
 #include "voce.h"
-#include <string>
-#include <ostream>
 
 using namespace std;
 
-struct voce {
-	
-	voce() {
-		this->nome = "";
-		this->cognome = "";
-		this->ntel = "";
-	}
+//more efficient than initialization
+voce() : 
+	nome(), cognome(), ntel() { }
 
-	voce(string nome, string cognome, string ntel) {
-		this->nome = nome;
-		this->cognome = cognome;
-		this->ntel = ntel;
-	}
+voce(string nome, string cognome, string ntel): 
+	nome(nome), cognome(cognome), ntel(ntel) { }
 
-	ostream& operator<< (ostream& os, const voce& v) {
-		os << v.nome << " " << v.cognome << " " << v.ntel;
-		return os;
-	}
-
+ostream& operator<< (ostream& os, const voce& v) {
+	os << v.nome << " " << v.cognome << " " << v.ntel;
+	return os;
 }
 //eof voce.cpp
