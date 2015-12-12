@@ -1,10 +1,11 @@
 /*
-version 1.0.1
+version 1.1
 
 Written by Ryick
 
 (add your name and modify the version number if you update the file)
 */
+
 #ifndef VOCE_H
 #define VOCE_H
 
@@ -13,16 +14,17 @@ Written by Ryick
 
 using namespace std;
 
-struct voce {
+struct Voce {
 	string nome;
 	string cognome;
 	string ntel;
 
-	voce();
-	voce(string nome, string cognome, string ntel);
+	Voce();
+	Voce(string nome, string cognome, string ntel);
 
-	ostream& operator<< (ostream& os, const voce& v);
 };
+
+ostream& operator<< (ostream& os, const voce& v);
 
 #endif
 //eof voce.h
