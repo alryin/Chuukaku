@@ -1,9 +1,9 @@
 /*
-version 1.0
+version 1.0.1
 
 Written by Ryick
 
-(add your name and modify the version number if you modify the file)
+(add your name and modify the version number if you update the file)
 */
 #ifndef VOCE_H
 #define VOCE_H
