@@ -1,5 +1,5 @@
 /*
-version 2.1
+version 2.2
 
 Written by Ryick 
 
@@ -12,11 +12,13 @@ using namespace std;
 //implementation of voce.h methods
 
 //more efficient than initialization
-Voce::Voce() : 
+Voce::Voce(void) : 
 	nome(), cognome(), ntel() { }
 
 Voce::Voce(string nome, string cognome, string ntel): 
 	nome(nome), cognome(cognome), ntel(ntel) { }
+	
+Voce::~Voce(void){ };	
 
 ostream& operator<< (ostream& os, const Voce& v) {
 	os << v.nome << " " << v.cognome << " " << v.ntel;
