@@ -1,5 +1,5 @@
 /*
-version 1.1
+version 1.2.1
 
 Written by Ryick
 
@@ -19,12 +19,12 @@ struct Voce {
 	string cognome;
 	string ntel;
 
-	Voce();
+	Voce(void);
 	Voce(string nome, string cognome, string ntel);
-
+	~Voce(void);
 };
 
-ostream& operator<< (ostream& os, const voce& v);
+ostream& operator<< (ostream& os, const Voce& v);
 
 #endif
 //eof voce.h
