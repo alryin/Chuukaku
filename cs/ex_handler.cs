@@ -13,7 +13,7 @@ namespace Esercizio
 
     public MathOpClass() 
     {
-       _del = new Op(Add);
+      _del = new Op(Add);
       _del += new Op(Sub);
       _del += new Op(Multiply);
     }
