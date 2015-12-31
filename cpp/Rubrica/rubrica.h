@@ -27,6 +27,7 @@ class rubrica{
 	rubrica();
 	explicit rubrica(size _maxSize);
 	rubrica(const rubrica &other);
+	~rubrica();
 	
 	void set_capacity(size _newMaxSize);
 	
