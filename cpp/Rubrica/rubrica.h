@@ -1,5 +1,5 @@
 /*
-version 0.9
+version 1.0
 
 Written by Ryick
 
@@ -11,18 +11,14 @@ Written by Ryick
 
 #include <string>
 #include <ostream>
+#include <stdexcept>
 #include "voce.h"
 
 class rubrica{
 	
-	using namespace std;
-	typedef unsigned int size;
-	
-	voce* _voci;
-	size _size; // numero di elementi attuali
-	size _maxSize; // numero di elementi massimi
-	
 	public:
+	
+	typedef unsigned int size;
 	
 	rubrica();
 	explicit rubrica(size _maxSize);
@@ -35,6 +31,8 @@ class rubrica{
 	size maxSize() const;
 	const voce& operator[](size i) const;
 	
+	rubrica& operator= (rubrica &r); // !
+	
 	void add(const string nome, const string cognome, const string ntel);
 	void add(const voce &other);
 	
@@ -45,6 +43,17 @@ class rubrica{
 	void save(const std::string filename) const;
 	
 	void load(const std::string filename);
+	
+	void rubrica::swapR(rubrica &other);
+
+private:
+	
+	voce* _voci;
+	size _size; // numero di elementi attuali
+	size _maxSize; // numero di elementi massimi
+	
+	//friend std::ostream &operator<<(std::ostream &os, const rubrica &r);
+	
 };
 
 ostream& operator<< (ostream& os, const rubrica& v);
