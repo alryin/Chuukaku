@@ -1,0 +1,898 @@
+Dr. Memory version 1.9.0 build 0 built on Aug 28 2015 22:56:18
+Dr. Memory results for pid 3040: "main.exe"
+Application cmdline: "main.exe"
+Recorded 110 suppression(s) from default c:\Program Files (x86)\Dr. Memory\bin\suppress-default.txt
+
+WARNING: application is missing line number information.
+Re-compile with the -ggdb flag to include DWARF2 line numbers.
+
+Error #1: INVALID HEAP ARGUMENT to free 0x01270790
+# 0 replace_free                      [d:\drmemory_package\common\alloc_replace.c:2514]
+# 1 msys-1.0.dll!posify@8    
+# 2 msys-1.0.dll!environ_init
+# 3 msys-1.0.dll!pinfo_init@8
+# 4 msys-1.0.dll!dll_crt0_1  
+# 5 msys-1.0.dll!_dll_crt0@0 
+# 6 msys_crt0
+# 7 mainCRTStartup
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x23     (0x743d3744 <KERNEL32.dll+0x13744>)
+Note: @0:00:06.041 in thread 1272
+Note: refers to -1 byte(s) before next malloc
+Note: next higher malloc: 0x01270790-0x012707b0
+Note: refers to -32 byte(s) beyond last valid byte in prior malloc
+Note: prev lower malloc:  0x01270790-0x012707b0
+
+Error #2: UNINITIALIZED READ: reading register eax
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::istream::operator>>
+#11 main    
+Note: @0:00:14.549 in thread 1272
+Note: instruction: cmp    %eax $0x00000002
+
+Error #3: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::istream::operator>>
+#11 main    
+Note: @0:00:14.553 in thread 1272
+Note: instruction: test   %ecx %ecx
+
+Error #4: UNINITIALIZED READ: reading 0x0029fa8e-0x0029fa90 2 byte(s)
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::istream::operator>>
+#11 main    
+Note: @0:00:14.558 in thread 1272
+Note: instruction: data16 cmp    0xffffff76(%ebp) $0x0000
+
+Error #5: UNINITIALIZED READ: reading register dh
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::istream::operator>>
+#11 main    
+Note: @0:00:14.563 in thread 1272
+Note: instruction: test   %dh $0x01
+
+Error #6: UNINITIALIZED READ: reading register cx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::istream::operator>>
+#11 main    
+Note: @0:00:14.634 in thread 1272
+Note: instruction: data16 cmp    0x000004c6(%esi) %cx
+
+Error #7: UNINITIALIZED READ: reading register dx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::istream::operator>>
+#11 main    
+Note: @0:00:14.637 in thread 1272
+Note: instruction: data16 cmp    0x000004c8(%esi) %dx
+
+Error #8: UNINITIALIZED READ: reading register dl
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::istream::operator>>
+#11 main    
+Note: @0:00:16.101 in thread 1272
+Note: instruction: test   %dl $0x10
+
+Error #9: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::istream::operator>>
+#11 main    
+Note: @0:00:16.105 in thread 1272
+Note: instruction: cmp    %ecx (%edx)
+
+Error #10: UNINITIALIZED READ: reading register eax
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:00:16.325 in thread 1272
+Note: instruction: cmp    %eax $0x00000002
+
+Error #11: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:00:16.328 in thread 1272
+Note: instruction: test   %ecx %ecx
+
+Error #12: UNINITIALIZED READ: reading register cx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:00:28.197 in thread 1272
+Note: instruction: data16 cmp    0x000004c6(%esi) %cx
+
+Error #13: UNINITIALIZED READ: reading register dx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:00:28.201 in thread 1272
+Note: instruction: data16 cmp    0x000004c8(%esi) %dx
+
+Error #14: UNINITIALIZED READ: reading 0x0029f9ee-0x0029f9f0 2 byte(s)
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:00:57.013 in thread 1272
+Note: instruction: data16 cmp    0xffffff76(%ebp) $0x0000
+
+Error #15: UNINITIALIZED READ: reading register dh
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:00:57.015 in thread 1272
+Note: instruction: test   %dh $0x01
+
+Error #16: UNINITIALIZED READ: reading register eax
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:00:58.913 in thread 1272
+Note: instruction: cmp    %eax $0x00000002
+
+Error #17: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:00:58.916 in thread 1272
+Note: instruction: test   %ecx %ecx
+
+Error #18: UNINITIALIZED READ: reading register cx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:00.744 in thread 1272
+Note: instruction: data16 cmp    0x000004c6(%esi) %cx
+
+Error #19: UNINITIALIZED READ: reading register dx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:00.747 in thread 1272
+Note: instruction: data16 cmp    0x000004c8(%esi) %dx
+
+Error #20: UNINITIALIZED READ: reading 0x0029f9ee-0x0029f9f0 2 byte(s)
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:06.951 in thread 1272
+Note: instruction: data16 cmp    0xffffff76(%ebp) $0x0000
+
+Error #21: UNINITIALIZED READ: reading register dh
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:06.955 in thread 1272
+Note: instruction: test   %dh $0x01
+
+Error #22: UNINITIALIZED READ: reading register eax
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:08.301 in thread 1272
+Note: instruction: cmp    %eax $0x00000002
+
+Error #23: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:08.304 in thread 1272
+Note: instruction: test   %ecx %ecx
+
+Error #24: UNINITIALIZED READ: reading 0x0029f9ee-0x0029f9f0 2 byte(s)
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:10.167 in thread 1272
+Note: instruction: data16 cmp    0xffffff76(%ebp) $0x0000
+
+Error #25: UNINITIALIZED READ: reading register dh
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:10.171 in thread 1272
+Note: instruction: test   %dh $0x01
+
+Error #26: UNINITIALIZED READ: reading register cx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:10.261 in thread 1272
+Note: instruction: data16 cmp    0x000004c6(%esi) %cx
+
+Error #27: UNINITIALIZED READ: reading register dx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:10.264 in thread 1272
+Note: instruction: data16 cmp    0x000004c8(%esi) %dx
+
+Error #28: UNINITIALIZED READ: reading register dl
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:19.762 in thread 1272
+Note: instruction: test   %dl $0x10
+
+Error #29: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:19.765 in thread 1272
+Note: instruction: cmp    %ecx (%edx)
+
+Error #30: UNINITIALIZED READ: reading register dl
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:23.161 in thread 1272
+Note: instruction: test   %dl $0x10
+
+Error #31: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:23.164 in thread 1272
+Note: instruction: cmp    %ecx (%edx)
+
+Error #32: UNINITIALIZED READ: reading register dl
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:26.056 in thread 1272
+Note: instruction: test   %dl $0x10
+
+Error #33: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:26.059 in thread 1272
+Note: instruction: cmp    %ecx (%edx)
+
+Error #34: UNINITIALIZED READ: reading register eax
+# 0 msys-1.0.dll!fhandler_console::cursor_set
+# 1 msys-1.0.dll!fhandler_console::write_normal
+# 2 msys-1.0.dll!fhandler_console::write
+# 3 msys-1.0.dll!_write      
+# 4 msys-1.0.dll!_write_r    
+# 5 msys-1.0.dll!__swrite    
+# 6 msys-1.0.dll!fflush      
+# 7 msys-1.0.dll!__swbuf     
+# 8 msys-1.0.dll!putc        
+# 9 __gnu_cxx::stdio_sync_filebuf<>::overflow
+#10 std::ostream::put
+#11 std::endl<>
+#12 main    
+Note: @0:01:45.358 in thread 1272
+Note: instruction: cmp    %eax %esi
+
+Error #35: UNINITIALIZED READ: reading register eax
+# 0 msys-1.0.dll!fhandler_console::cursor_set
+# 1 msys-1.0.dll!fhandler_console::write_normal
+# 2 msys-1.0.dll!fhandler_console::write
+# 3 msys-1.0.dll!_write      
+# 4 msys-1.0.dll!_write_r    
+# 5 msys-1.0.dll!__swrite    
+# 6 msys-1.0.dll!fflush      
+# 7 msys-1.0.dll!__swbuf     
+# 8 msys-1.0.dll!putc        
+# 9 __gnu_cxx::stdio_sync_filebuf<>::overflow
+#10 std::ostream::put
+#11 std::endl<>
+#12 main    
+Note: @0:01:45.361 in thread 1272
+Note: instruction: cmp    %eax 0x10(%ebp)
+
+Error #36: UNINITIALIZED READ: reading register eax
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:49.292 in thread 1272
+Note: instruction: cmp    %eax $0x00000002
+
+Error #37: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:49.295 in thread 1272
+Note: instruction: test   %ecx %ecx
+
+Error #38: UNINITIALIZED READ: reading 0x0029f9ee-0x0029f9f0 2 byte(s)
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:52.743 in thread 1272
+Note: instruction: data16 cmp    0xffffff76(%ebp) $0x0000
+
+Error #39: UNINITIALIZED READ: reading register dh
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:52.746 in thread 1272
+Note: instruction: test   %dh $0x01
+
+Error #40: UNINITIALIZED READ: reading register cx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:52.832 in thread 1272
+Note: instruction: data16 cmp    0x000004c6(%esi) %cx
+
+Error #41: UNINITIALIZED READ: reading register dx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:52.835 in thread 1272
+Note: instruction: data16 cmp    0x000004c8(%esi) %dx
+
+Error #42: UNINITIALIZED READ: reading register dl
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:53.070 in thread 1272
+Note: instruction: test   %dl $0x10
+
+Error #43: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:53.073 in thread 1272
+Note: instruction: cmp    %ecx (%edx)
+
+Error #44: UNINITIALIZED READ: reading register eax
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:53.257 in thread 1272
+Note: instruction: cmp    %eax $0x00000002
+
+Error #45: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:53.260 in thread 1272
+Note: instruction: test   %ecx %ecx
+
+Error #46: UNINITIALIZED READ: reading register cx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:55.105 in thread 1272
+Note: instruction: data16 cmp    0x000004c6(%esi) %cx
+
+Error #47: UNINITIALIZED READ: reading register dx
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:01:55.108 in thread 1272
+Note: instruction: data16 cmp    0x000004c8(%esi) %dx
+
+Error #48: UNINITIALIZED READ: reading 0x0029f9ee-0x0029f9f0 2 byte(s)
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:02:03.783 in thread 1272
+Note: instruction: data16 cmp    0xffffff76(%ebp) $0x0000
+
+Error #49: UNINITIALIZED READ: reading register dh
+# 0 msys-1.0.dll!fhandler_console::read
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:02:03.787 in thread 1272
+Note: instruction: test   %dh $0x01
+
+Error #50: UNINITIALIZED READ: reading register dl
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:02:04.903 in thread 1272
+Note: instruction: test   %dl $0x10
+
+Error #51: UNINITIALIZED READ: reading register ecx
+# 0 msys-1.0.dll!get_nonascii_key
+# 1 msys-1.0.dll!fhandler_console::read
+# 2 msys-1.0.dll!_read       
+# 3 msys-1.0.dll!_read_r     
+# 4 msys-1.0.dll!__sread     
+# 5 msys-1.0.dll!__srefill   
+# 6 msys-1.0.dll!__srget     
+# 7 msys-1.0.dll!getc        
+# 8 __gnu_cxx::stdio_sync_filebuf<>::underflow
+# 9 std::istream::sentry::sentry
+#10 std::operator>><>
+#11 main    
+Note: @0:02:04.906 in thread 1272
+Note: instruction: cmp    %ecx (%edx)
+
+Error #52: LEAK 32 direct bytes 0x01270790-0x012707b0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2384]
+# 1 msys-1.0.dll!strdup      
+# 2 msys-1.0.dll!environ_init
+# 3 msys-1.0.dll!pinfo_init@8
+# 4 msys-1.0.dll!dll_crt0_1  
+# 5 msys-1.0.dll!_dll_crt0@0 
+# 6 msys_crt0
+# 7 mainCRTStartup
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x23     (0x743d3744 <KERNEL32.dll+0x13744>)
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:      4
+	Error #   2:      3
+	Error #   3:      3
+	Error #   5:      2
+	Error #  10:    107
+	Error #  11:     50
+	Error #  12:     80
+	Error #  13:     80
+	Error #  14:      5
+	Error #  15:     25
+	Error #  16:     56
+	Error #  17:     48
+	Error #  18:     30
+	Error #  19:     30
+	Error #  20:      4
+	Error #  21:     24
+	Error #  22:     44
+	Error #  23:     44
+	Error #  24:      4
+	Error #  25:     22
+	Error #  26:     22
+	Error #  27:     22
+	Error #  28:      4
+	Error #  29:      4
+	Error #  30:      3
+	Error #  31:      3
+	Error #  32:      3
+	Error #  33:      3
+	Error #  36:      4
+	Error #  37:      4
+	Error #  39:      2
+	Error #  44:     65
+	Error #  45:     12
+	Error #  46:     58
+	Error #  47:     58
+	Error #  49:      6
+	Error #  52:      4
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      0 unique,     0 total unaddressable access(es)
+     50 unique,   949 total uninitialized access(es)
+      1 unique,     4 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      1 unique,     4 total,   1171 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+     52 potential error(s) (suspected false positives)
+         (details: C:\Users\uni\AppData\Roaming\Dr. Memory\DrMemory-main.exe.3040.000\potential_errors.txt)
+     95 potential leak(s) (suspected false positives)
+         (details: C:\Users\uni\AppData\Roaming\Dr. Memory\DrMemory-main.exe.3040.000\potential_errors.txt)
+     27 unique,    94 total,  10329 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\uni\AppData\Roaming\Dr. Memory\DrMemory-main.exe.3040.000\results.txt
