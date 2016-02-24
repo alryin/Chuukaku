@@ -1,9 +1,3 @@
-/*
-Nome: Davide 
-Cognome: Marcon 
-Matricola: 781344
-*/
-
 #ifndef CBUFFER_H
 #define CBUFFER_H
 #include <iostream>
